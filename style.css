@@ -1,0 +1,95 @@
+/* style.css */
+
+/* Allgemeine Body-Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Mindesthöhe des Viewports */
+  justify-content: flex-start; /* Elemente oben beginnen lassen */
+}
+
+/* Überschriften-Styles */
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* Container für den Rezept-Generator */
+#recipeContainer {
+    background-color: #fce4ec; /* Hellrosa */
+    border: 1px solid #e91e63; /* Pink */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 600px; /* Maximale Breite für größere Bildschirme */
+    text-align: center;
+}
+
+/* Styles für die Zutatenliste */
+#recipeList {
+    list-style: decimal; /* Nummerierte Liste */
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#recipeList li {
+    background-color: #f8bbd0; /* Helles Pink */
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+}
+
+/* Hervorhebung für bestimmte Zutaten (wird per JavaScript hinzugefügt) */
+#recipeList li.highlight-ingredient {
+    font-weight: bold;
+    color: #880e4f; /* Dunkelpink */
+    background-color: #f48fb1; /* Mittleres Pink */
+    border: 1px dashed #880e4f; /* Gestrichelter Rand für mehr Sichtbarkeit */
+}
+
+/* Button-Styles */
+button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e91e63; /* Pink */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #c2185b; /* Dunkleres Pink */
+  transform: translateY(-2px); /* Leichter Hoch-Effekt */
+}
+
+button:active {
+  transform: translateY(0); /* Zurückfedern beim Klicken */
+}
+
+/* Styles für den Nachrichtenbereich */
+#message {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-left: 5px solid #00bcd4;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 580px; /* Breite an Container anpassen */
+    text-align: left;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#message p {
+    margin: 0;
+}
